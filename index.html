@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Serif;
+            
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        li {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 38px;
+        }
+        
+        figure {
+            display: flex;
+        }
+        section div.first {
+            display: flex;
+            position: relative;
+
+        }
+        section {
+            width: 1440px;
+        }
+        section.decima {
+            position: relative;
+            background-color: #FEECE0;
+            height: 461px;
+        }
+
+        section.decima div.first {
+            width: 1073px;
+            height: 293px;
+            top: 112px;
+            left: 155px;
+            gap: 56px;
+        }
+
+        section.decima div div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        section.decima div div div {
+            flex-direction: row;
+            justify-content: start;
+            color: #9B6647;
+            font-size: 35px;
+            gap: 20px;
+        }
+
+        section.decima div div h1 {
+            font-size: 72px;
+            line-height: 70%;
+            color: #58190A;
+        }
+
+        section.decima div div h2 {
+            color: #58190A;
+            font-weight: 100
+        }
+
+        section.decima div div button {
+            border-color: #9B6647;
+            color: #9B6647;
+            border-radius: 100%;
+            background-color: transparent;
+            height: 32px;
+            width: 32px;
+            
+            font-size: 30px;
+            line-height: 1px;
+        }
+        
+        section.debaixo {
+            height: 439px;
+            background-color: #9B6647;
+            color: #FEECE0;
+        }
+
+        section.debaixo div.first {
+            top: 74px;
+            left: 140px;
+            gap: 64px;
+        }
+
+        section.debaixo div div {
+           display: flex;
+           flex-direction: column;
+           gap: 32px;
+        }
+
+        section.debaixo div div div {
+            display: flex;
+            gap: 11px;
+            flex-direction: row;
+        }
+        section.debaixo div div div ul, ol {
+            padding-left: 30px;
+            
+        }
+        section.debaixo li {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <section class="decima">
+            <div class="first">
+                <figure>
+                    <img src="assets/pamonha.svg" alt="">
+                </figure>
+                <div>
+                    <h1>Pamonha</h1>
+                    <h2>Prato típico com milho verde ralado</h2>
+                    <div>
+                        <label>Porções</label> 
+                        <button onclick="subtracao()">-</button>
+                        <span id="valor">00</span>
+                        <button onclick="soma()">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="debaixo">
+            <div class="first">
+                <div>
+                    <div>
+                        <figure>
+                            <img src="assets/ces.svg" alt="">
+                        </figure>
+                        <h2>Ingredientes</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>1 espiga de milho verde</li>
+                            <li>1 colher de sopa de açúcar</li>
+                            <li> 1 colher de sopa de manteiga</li>
+                            <li> Sal a gosto</li>
+                            <li> Palha de milho (para embrulhar)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div>
+                        <figure>
+                            <img src="assets/pan.svg" alt="">
+                        </figure>
+                        <h2>Modo de Preparo</h2>
+                    </div>
+                    <ol>
+                        <li>Descasque a espiga de milho e corte os grãos.</li>
+                        <li>Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+                        <li>Coloque a massa nas palhas de milho e feche bem.</li>
+                        <li>Cozinhe em água fervente por cerca de 40 minutos.</li>
+                        <li> Deixe esfriar e sirva.</li>
+                    </ol>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+<script>
+    let e = document.querySelector("#valor")
+    
+    function soma() {
+        eValue = Number(e.textContent) + 1
+        e.textContent = eValue > 9 ? eValue : `0${eValue}`
+    }
+
+    function subtracao() {
+        if (e.textContent > 0) {
+            eValue = Number(e.textContent) - 1
+            e.textContent = eValue > 9 ? eValue : `0${eValue}`
+        }
+        
+    }
+    
+</script>
+</html>
