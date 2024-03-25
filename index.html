@@ -137,7 +137,7 @@
                     <div>
                         <label>Porções</label> 
                         <button onclick="subtracao()">-</button>
-                        <span id="valor">00</span>
+                        <span id="valor">1</span>
                         <button onclick="soma()">+</button>
                     </div>
                 </div>
@@ -154,9 +154,9 @@
                     </div>
                     <div>
                         <ul>
-                            <li>1 espiga de milho verde</li>
-                            <li>1 colher de sopa de açúcar</li>
-                            <li> 1 colher de sopa de manteiga</li>
+                            <li><span id="everdade">1</span> espiga de milho verde</li>
+                            <li><span id="everdade">1</span> colher de sopa de açúcar</li>
+                            <li><span id="everdade">1</span> colher de sopa de manteiga</li>
                             <li> Sal a gosto</li>
                             <li> Palha de milho (para embrulhar)</li>
                         </ul>
@@ -186,16 +186,18 @@
 </body>
 <script>
     let e = document.querySelector("#valor")
-    
+    let everdade = document.querySelector("#everdade")
     function soma() {
         eValue = Number(e.textContent) + 1
         e.textContent = eValue > 9 ? eValue : `0${eValue}`
+        everdade.textContent = eValue > 9 ? eValue : `0${eValue}`
     }
 
     function subtracao() {
         if (e.textContent > 0) {
             eValue = Number(e.textContent) - 1
             e.textContent = eValue > 9 ? eValue : `0${eValue}`
+            everdade.textContent = eValue > 9 ? eValue : `0${eValue}`
         }
         
     }
