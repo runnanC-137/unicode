@@ -85,6 +85,30 @@
             line-height: 32.39px;
         }
 
+        @media only screen
+        and (max-width: 900px) {
+            section {
+                flex-direction: column;
+                width: auto;
+                height: auto;
+            }
+            .de-cima {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .de-cima picture {
+                width: 90%;
+            }
+            .de-cima .porcoes {
+                justify-content: center;
+            }
+            .de-baixo .lista {
+                padding-left: 25px;
+            }
+            .de-baixo .ingredientes, .modo-de-preparo {
+                padding: 10px
+            }
+        }
     </style>
     
 </head>
