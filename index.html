@@ -168,15 +168,16 @@
     </section>
 </body>
 <script>
-    let e = document.querySelector("#valor")
+    //let e = document.querySelector("#valor")
+    cons {textContent: valor, ...elemento} = document.querySelector("#valor")
     let everdade = document.querySelectorAll(".everdade")
     console.log(everdade)
     let num = (n) => n > 9 ? n : `0${n}`
     function soma() {
-        eValue = Number(e.textContent) + 1
-        e.textContent = num(eValue) //eValue > 9 ? eValue : `0${eValue}`
-        everdade.forEach(e => e.textContent = eValue > 9 ? eValue : `0${eValue}`)
-     
+        evalue = Number(valor) + 1
+        elemento.textContent = num(evalue) 
+        //evalue > 9 ? evalue : `0${eValue}`
+        everdade.forEach(e => e.textContent = num(evalue))
     }
 
     function subtracao() {
