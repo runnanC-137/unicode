@@ -180,7 +180,7 @@
     }
 
     function subtracao() {
-        if (e.textContent > 0) {
+        if (e.textContent > 1) {
             eValue = Number(e.textContent) - 1
             e.textContent = eValue > 9 ? eValue : `0${eValue}`
             everdade.forEach(e => e.textContent = eValue > 9 ? eValue : `0${eValue}`)
