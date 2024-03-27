@@ -171,10 +171,12 @@
     let e = document.querySelector("#valor")
     let everdade = document.querySelectorAll(".everdade")
     console.log(everdade)
+    let num = (n) => n > 9 ? n : `0${n}`
     function soma() {
         eValue = Number(e.textContent) + 1
-        e.textContent = eValue > 9 ? eValue : `0${eValue}`
+        e.textContent = num(eValue) //eValue > 9 ? eValue : `0${eValue}`
         everdade.forEach(e => e.textContent = eValue > 9 ? eValue : `0${eValue}`)
+     
     }
 
     function subtracao() {
