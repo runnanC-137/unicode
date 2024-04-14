@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            width: 100vw;
+            height: 100vh;
+        }
+        section {
+            max-width: 38vw;
+        }
+        .foto picture {
+            position: relative;
+        }
+        .foto img {
+            width: 300px;
+            display: block;
+            border-radius: 10px;
+        }
+        .foto picture::before  {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            width: 100%;
+            height: 100%;
+            border: 1.5pt solid blueviolet;
+            border-radius: 10px;
+            z-index: -1; 
+        }
+        
+        .textos h1 {
+            font-size: 25pt;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .textos h1 span {
+            color: blueviolet;
+        }
+        .textos p {
+            font-size: 15pt;
+            text-align: justify;
+            line-height: 20pt;
+        }
+        .textos .botoes {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            gap: 10pt;
+        }
+        .textos .botoes button {
+            font-size: 20px;
+            padding: 10px 16.5%;
+            color: #f4f4f4;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="textos">
+            <h1>Eleve seu negócio digital a outro nivel <span>Com um front-end de respeito!!</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium voluptatibus maiores quos iusto adipisci natus, dicta modi iste nobis atque, aliquam, temporibus sit vitae harum molestiae? Qui, possimus delectus!</p>
+            <div class="botoes">
+                <button>Instagram</button>
+                <button>GitHub</button>
+            </div>
+        </section>
+        <section class="foto">
+            <picture>
+                <img src="./foto-perfil.jpg" >
+            </picture>
+        </section>
+    </main>
+</body>
+</html>
