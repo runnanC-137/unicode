@@ -60,14 +60,18 @@
             justify-content: space-around;
             position: relative;
             gap: 10pt;
-        }
-        .textos .botoes button {
-            font-size: 20px;
-            padding: 10px 16.5%;
-            color: #f4f4f4;
-            background-color: blueviolet;
-            border: none;
-            border-radius: 8px;
+            button {
+                font-size: 20px;
+                padding: 10px 16.5%;
+                color: #f4f4f4;
+                background-color: blueviolet;
+                border: none;
+                border-radius: 8px;
+                transition: scale .3s ease;
+            }:hover {
+                scale: 1.1;
+                cursor: pointer;
+            }
         }
         .navegador  {
             button {
@@ -79,8 +83,7 @@
                 padding: 10px;
                 border-radius: 10px;
                 transition: scale .3s ease;
-            }
-            :hover {
+            }:hover {
                 scale: 1.1;
                 color: cadetblue;
                 background-color: aliceblue;
@@ -97,8 +100,8 @@
                 Olá! Sou o Ruan, um apaixonado por tecnologia e programação. Com uma sólida experiência no desenvolvimento de software, estou sempre em busca de soluções inovadoras. Minha dedicação vai além do código - busco criar experiências excepcionais para os usuários. Vamos transformar ideias em realidade juntos!
             </p>
             <div class="botoes">
-                <button>Instagram</button>
-                <button>GitHub</button>
+                <button onclick="window.location.href='https://github.com/runnanC-137/unicode'">Instagram</button>
+                <button onclick="window.location.href='https://github.com/runnanC-137/unicode'">GitHub</button>
             </div>
         </section>
         <section class="foto">
