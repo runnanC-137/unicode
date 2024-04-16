@@ -6,6 +6,23 @@ body{
     justify-content: center;
     margin: 18.8vh;
 }
+.navegador  {
+    button {
+        position: absolute;
+        border: none;
+        background-color: cadetblue;
+        color: #f4f4f4;
+        bottom: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: scale .3s ease; 
+    }:hover {
+        scale: 1.1;
+        color: cadetblue;
+        background-color: aliceblue;
+    }
+    
+}
 .frame-i{
     display: flex;
     flex-direction: column;

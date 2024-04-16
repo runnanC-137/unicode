@@ -69,6 +69,24 @@
             border: none;
             border-radius: 8px;
         }
+        .navegador  {
+            button {
+                position: absolute;
+                border: none;
+                background-color: cadetblue;
+                color: #f4f4f4;
+                bottom: 100px;
+                padding: 10px;
+                border-radius: 10px;
+                transition: scale .3s ease;
+            }
+            :hover {
+                scale: 1.1;
+                color: cadetblue;
+                background-color: aliceblue;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -82,18 +100,18 @@
                 <button>Instagram</button>
                 <button>GitHub</button>
             </div>
-            <div>
-                <button 
-                onclick="window.location.href='site-sofa'">
-                    Go to Sofa 360
-                </button>
-            </div>
         </section>
         <section class="foto">
             <picture>
                 <img src="./assets/foto-perfil.jpg" >
             </picture>
         </section>
+        <nav class="navegador">
+            <button 
+            onclick="window.location.href='site-sofa'">
+                Go to Sofa 360
+            </button>
+        </nav>
     </main>
 </body>
 </html>
