@@ -91,26 +91,29 @@
                 flex-direction: column;
                 width: auto;
                 height: auto;
+
+                .de-cima {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    gap: 10px;
+                    picture {
+                        width: 90%;
+                    }
+                    .porcoes {
+                        justify-content: center;
+                    }
+                }
             }
-            .de-cima {
-                flex-direction: column-reverse;
-                text-align: center;
-                gap: 10px;
-            }
-            .de-cima picture {
-                width: 90%;
-            }
+            
             .de-baixo {
                 gap: 10px;
-            }
-            .de-cima .porcoes {
-                justify-content: center;
-            }
-            .de-baixo .lista {
-                padding-left: 25px;
-            }
-            .de-baixo .ingredientes, .modo-de-preparo {
-                padding: 10px
+
+                .lista {
+                    padding-left: 25px;
+                }
+                .ingredientes, .modo-de-preparo {
+                    padding: 10px
+                }
             }
         }
     </style>
