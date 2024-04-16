@@ -9,11 +9,11 @@
     <title>Sofa</title>
 </head>
 <body>
-        <div class="frameimage">
+        <div class="frame-i">
             <img id="botao" onclick="mudar()" class="icon" src="./assets/360.png" alt="">
-            <img id="sofa" class="imagem" src="./assets/sofa.png" alt="">
+            <img id="sofa" class="imagem" src="./assets/sofa.png" alt="sofa">
         </div>
-        <div class="frametexto">
+        <div class="frame-t">
             <div class="texto">
             <p>CODIGO: 42404</p>
             <h1>Sofá Margot II - Rosé</h1>
@@ -24,4 +24,20 @@
             </div>
         </div>
 </body>
+<script>
+    butao = document.querySelector("#botao")
+    sofaImage = document.querySelector("#sofa")
+    butao.addEventListener("click", ()=> {
+        if (butao.alt == "sofa") {
+            sofa.src = "./assets/sofa360.gif"
+            butao.src = "./assets/x.png"
+            butao.alt = "sofa-girando"
+        } else {
+            sofa.src = "./assets/sofa.png"
+            butao.src = "./assets/360.png"
+            butao.alt = "sofa"
+        }
+        
+    })
+</script>
 </html>

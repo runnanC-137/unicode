@@ -6,7 +6,7 @@ body{
     justify-content: center;
     margin: 18.8vh;
 }
-.frameimage{
+.frame-i{
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@ body{
     width: 7vh;
     margin-left: 80%;
 }
-.frametexto{
+.frame-t{
     display: flex;
     flex-direction: column;
 }
