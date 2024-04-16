@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Source Serif Pro' rel='stylesheet'>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            box-sizing: border-box;
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Source Serif Pro;
         }
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
+        section {
             width: 100vw;
-            height: 100vh;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .de-cima {
+            background-color: #FEECE0;
+            justify-content: center;
+           gap: 51.53px;
         }
 
         .de-cima picture {
@@ -111,6 +114,7 @@
             }
         }
     </style>
+    
 </head>
 <body>
     <section class="de-cima">
@@ -163,4 +167,27 @@
             
     </section>
 </body>
+<script>
+    let e = document.querySelector("#valor")
+    //cons {textContent: valor, ...elemento} = document.querySelector("#valor")
+    let everdade = document.querySelectorAll(".everdade")
+    //console.log(everdade)
+    let num = (n) => n > 9 ? n : `0${n}`
+    function soma() {
+        evalue = Number(e.textContent) + 1
+        e.textContent = num(evalue)
+        everdade.forEach(e => e.textContent = num(evalue))
+    }
+
+    function subtracao() {
+        if (e.textContent > 1) {
+            eValue = Number(e.textContent) - 1
+            e.textContent = eValue > 9 ? eValue : `0${eValue}`
+            everdade.forEach(e => e.textContent = eValue > 9 ? eValue : `0${eValue}`)
+            
+        }
+        
+    }
+    
+</script>
 </html>
