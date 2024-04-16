@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: #D9CDF7;
+    align-items: center;
+    justify-content: center;
+    margin: 18.8vh;
+}
+.frameimage{
+    display: flex;
+    flex-direction: column;
+}
+.imagem{
+    width: 100vh;
+}
+.icon{
+    width: 7vh;
+    margin-left: 80%;
+}
+.frametexto{
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+    gap: 12px;
+}
+.texto h1{
+    font-family: "Crimson Pro";
+    color: #271A45;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: left;
+    font-style: normal;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.texto p{
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    text-align: left;
+    color: #271a45c1;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+.texto h2{
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: left;
+    color: #271a457e;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    border: 1.5px #271a45cc solid;
+    border-radius: 25px;
+    width: 60%;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.textobutton{
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px;
+    color: #271a45cc;
+}
