@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruan&Wesley</title>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;  
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #87CEEB;
+            
+            .menu {
+                padding: 10px 50px 0 0;
+            }
+            a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                background-color: #FF7E5C;
+                box-shadow: 5px 5px 0px;
+                border: 3px solid black;
+                border-radius: 0px;
+                padding: 8px 10px;
+                margin: 5px 5px 0px 5px; 
+                text-decoration: none;
+            }
+            a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .autores-nome {
+                display: flex;
+                font-size: 200%;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bolder;
+                align-items: center;
+                padding: 10px;
+                .autor-nome {
+                   color: black;
+                }
+            }
+        }
+        .os-autores {
+            background-color: #87CEEB;
+            display: flex;
+            padding: 20px 0px; 
+            flex-direction: row;
+            justify-content: space-around;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            .autor-perfil {
+                text-align: center;
+                padding: 15px 0px;
+                font-family: monospace;
+                border: 3px solid black;
+                box-shadow: -10px 7px 0px;
+                background-color:whitesmoke;
+                border-radius: 20px;
+                .autor-image {
+                    width: 90%;
+                    border-radius: 10px;
+                    border: 2px solid black
+                }
+                .autor-title {
+                    margin: 10px 0px 5px 0px;
+                }
+                .autor-skills {
+                    font-size: 95%;
+                    margin: 0px 0px 15px 0px;
+                }
+                .autor-contato {
+                    font-size: 100%;
+                    font-family: monospace;
+                    padding: 5px 8px;
+                    text-decoration: none;
+                    box-shadow: 2px 2px 0px;
+                    background-color: #90EE90;
+                    /* border-radius: 5px; */
+                    border: 2px solid black;
+                }
+            }
+        }
+        .projetos {
+            padding: 0px 20px;
+            font-family: monospace;
+            background-color: #F4D738;
+            .projetos-title {
+                margin: 0px;
+                padding: 10px;
+                font-weight: bolder;
+                text-align: center;
+                margin: auto;
+            }
+            .projeto {
+                display: flex;
+                padding: 10px;
+                background-color: #A388EE;
+                border-radius: 0px;
+                box-shadow: 5px 5px 0px;
+                text-align: center;
+                border:  3px solid black; 
+                position: relative;
+                width: 550px;
+                .image-projeto {
+                    border-radius: 0px;
+                    /* box-shadow: 3px 3px 0px; */
+                    border:  2px solid black; 
+                    width: 45%;
+                    float: inherit;
+                    
+                }
+                .title-projeto {
+                    font-size: 200%;
+                    font-weight: bolder
+                }
+                .textos-projeto {
+                    text-align: left; 
+                    padding: 10px;
+                    text-align: justify;
+                    .descricao-projeto {
+                        font-size: 130%;
+                        font-weight: bold
+                    }
+                }
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="autores-nome">
+            Ruan & Wesley
+        </div>
+        <div class="menu">
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+        
+    </div>
+    
+    <div class="os-autores">
+        <div class="autor-perfil"> 
+            <img class="autor-image" src="../pamonha/assets/pamonha.svg" alt="">
+            <h3 class="autor-title">Ruan Vieira</h3>
+            <p class="autor-skills">Software Devoper - Backend Programmer</p>
+            <a href="#contato" class="autor-contato">contato</a>
+        </div>
+
+        <div class="autor-perfil">
+            <img class="autor-image" src="../pamonha/assets/pamonha.svg" alt="">
+            <h3 class="autor-title">Ruan Vieira</h3>
+            <p class="autor-skills">Software Devoper - Backend Programmer</p>
+            <a href="#contato" class="autor-contato">contato</a>
+        </div>
+    </div>
+    <div class="projetos" id="projetos">
+        <h1 class="projetos-title">Projetos</h1>
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+
+        <span> maio </span>
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">chao</div>
+</body>
+</html>
