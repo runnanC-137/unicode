@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruan&Wesley</title>
     <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -14,6 +18,7 @@
             padding: 0;  
         }
         #navbar {
+            height: 5vh;
             display: flex;
             justify-content: space-between;
             background-color: #87CEEB;
@@ -21,6 +26,7 @@
             .menu {
                 padding: 10px 50px 0 0;
             }
+
             a {
                 float: left;
                 display: block;
@@ -52,6 +58,7 @@
         }
         .os-autores {
             background-color: #87CEEB;
+            height: 45vh;
             display: flex;
             padding: 20px 0px; 
             flex-direction: row;
@@ -71,11 +78,11 @@
                     border: 2px solid black
                 }
                 .autor-title {
-                    margin: 10px 0px 5px 0px;
+                    padding: 10px 0px 5px 0px;
                 }
                 .autor-skills {
                     font-size: 95%;
-                    margin: 0px 0px 15px 0px;
+                    padding-bottom: 15px;
                 }
                 .autor-contato {
                     font-size: 100%;
@@ -90,18 +97,19 @@
             }
         }
         .projetos {
-            padding: 0px 20px;
+            padding: 10px 20px;
+            min-height: 47vh;
             display: flex;
-            flex-wrap: wrap-reverse;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
             font-family: monospace;
             background-color: #F4D738;
             .projetos-title {
-                margin: 0px;
-                flex-grow: 4;
-                padding: 10px;
+                width: 100%;
+                height: auto;
                 font-weight: bolder;
                 text-align: center;
-                margin: auto;
             }
             .projeto {
                 display: flex;
@@ -136,6 +144,12 @@
                 }
                 
             }
+        }
+
+        .bottom {
+            height: 3vh;
+            background-color: #87CEEB;
+            text-align: center;
         }
     </style>
 </head>
@@ -193,6 +207,8 @@
             </div>
         </div>
     </div>
-    <div class="bottom">chao</div>
+    <div class="bottom">
+        Bottom
+    </div>
 </body>
 </html>
