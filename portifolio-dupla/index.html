@@ -91,10 +91,13 @@
         }
         .projetos {
             padding: 0px 20px;
+            display: flex;
+            flex-wrap: wrap-reverse;
             font-family: monospace;
             background-color: #F4D738;
             .projetos-title {
                 margin: 0px;
+                flex-grow: 4;
                 padding: 10px;
                 font-weight: bolder;
                 text-align: center;
@@ -174,7 +177,14 @@
             </div>
         </div>
 
-        <span> maio </span>
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+
         <div class="projeto">
             <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
             <div class="textos-projeto">
