@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruan&Wesley</title>
+    <title>Ruan & Wesley</title>
     <style type="text/css">
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         html {
             scroll-behavior: smooth;
@@ -59,7 +60,7 @@
         }
         .os-autores {
             background-color: #87CEEB;
-            min-height: 45vh;
+            min-height: 55vh;
             display: flex;
             padding: 0px 0px; 
             flex-direction: row;
@@ -151,7 +152,46 @@
                 
             }
         }
+        #contato {
+            position: relative;
+            background-color: #90EE90;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-around;
+            div {
+                position: relative;
+                background-color: white;
+                box-shadow: 10px 10px 0px;
+                padding: 10px;
+                height: 100px;
+                border: solid 3px black;
+                width: 30%;
+                ul {
+                    width: 100%;
+                    font-family: monospace;
+                    display: flex;
+                    a {
+                    text-decoration: none;
+                    color: black;
+                    }
+                    li {
+                        height: 90%;
+                        padding: 5px 5px;
+                        font-size: 18px;
+                        list-style: none;
+                        width: 90px;
+                        text-align: center;
+                        margin: 0px 5px 0px 0px;
+                        cursor: pointer;
 
+                    }
+                    li:hover {
+                        background-color: #90EE90;
+                    }
+                }
+                
+            }
+        }
         .bottom {
             min-height: 4vh;
             background-color: #FFB2EF;
@@ -225,6 +265,26 @@
                 <h2 class="title-projeto">Receita de Pamonha</h2>
                 <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
             </div>
+        </div>
+    </div>
+    <div id="contato">
+        <div>
+            <h1>Ruan</h1>
+            <ul>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Email</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1>Wesley</h1>
+            <ul>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Email</a></li>
+                <li><a href="http://" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
+            </ul>
         </div>
     </div>
     <footer class="bottom">
