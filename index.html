@@ -3,118 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style>
+    <title>Ruan Vieira</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            box-sizing: border-box;
+            padding: 0;  
         }
-        main {
+        #navbar {
+            min-height: 5vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            width: 100vw;
-            height: 100vh;
-        }
-        section {
-            max-width: 38vw;
-        }
-        .foto picture {
-            position: relative;
-        }
-        .foto img {
-            width: 300px;
-            display: block;
-            border-radius: 10px;
-        }
-        .foto picture::before  {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 5px;
-            width: 100%;
-            height: 100%;
-            border: 1.5pt solid blueviolet;
-            border-radius: 10px;
-            z-index: -1; 
-        }
-        
-        .textos h1 {
-            font-size: 25pt;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .textos h1 span {
-            color: blueviolet;
-        }
-        .textos p {
-            font-size: 15pt;
-            text-align: justify;
-            line-height: 20pt;
-        }
-        .textos .botoes {
-            display: flex;
-            justify-content: space-around;
-            position: relative;
-            gap: 10pt;
-            button {
-                font-size: 20px;
-                padding: 10px 16.5%;
-                color: #f4f4f4;
-                background-color: blueviolet;
-                border: none;
-                border-radius: 8px;
-                transition: scale .3s ease;
-            }:hover {
-                scale: 1.1;
-                cursor: pointer;
+            justify-content: space-between;
+            background-color: #87CEEB;
+            
+            .menu {
+                padding: 0px 0px;
+            }
+
+            a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                background-color: #FF7E5C;
+                box-shadow: 5px 5px 0px;
+                border: 3px solid black;
+                border-radius: 0px;
+                padding: 8px 10px;
+                margin: 10px 25px 10px 10px;
+               
+                text-decoration: none;
+            }
+            a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .autor-nome {
+                display: flex;
+                font-size: 200%;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bolder;
+                align-items: center;
+                padding: 10px;
+                color: black;
+                
             }
         }
-        .navegador  {
-            button {
-                position: absolute;
-                border: none;
-                background-color: cadetblue;
-                color: #f4f4f4;
-                bottom: 100px;
-                padding: 10px;
-                border-radius: 10px;
-                transition: scale .3s ease;
-            }:hover {
-                scale: 1.1;
-                color: cadetblue;
-                background-color: aliceblue;
+        .autor {
+            background-color: #87CEEB;
+            min-height: 55vh;
+            display: flex;
+            padding: 0px 0px; 
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            .autor-perfil {
+                width: 300px;
+                height: 100%;
+                padding: 10px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-family: monospace;
+                border: 3px solid black;
+                box-shadow: -20px 10px 0px;
+                background-color:whitesmoke;
+                border-radius: 20px;
+                .autor-image {
+                    width: 90%;
+                    border-radius: 80px 20px 20px 20px;
+                    border: 2px solid black
+                }
+                .autor-title {
+                    padding: 10px 0px 5px 0px;
+                }
+                .autor-skills {
+                    font-size: 95%;
+                    padding-bottom: 15px;
+                }
+                .autor-contato {
+                    font-size: 100%;
+                    font-family: monospace;
+                    padding: 5px 8px;
+                    text-decoration: none;
+                    box-shadow: 2px 2px 0px;
+                    background-color: #90EE90;
+                    /* border-radius: 5px; */
+                    border: 2px solid black;
+                }
+            }
+        }
+        .projetos {
+            padding: 20px 0 20px 0px;
+            min-height: 40vh;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-family: monospace;
+            background-color: #F4D738;
+
+            .projetos-title {
+                min-width: 100%;
+                font-size: 250%;
+                font-weight: bolder;
+                text-align: center;
+            }
+            .projeto {
+                display: flex;
+                padding: 7px;
+                background-color: #A388EE;
+                border-radius: 0px;
+                box-shadow: 5px 5px 0px;
+                text-align: center;
+                border:  3px solid black; 
+                position: relative;
+                width: 500px;
+                height: 150px;
+                .image-projeto {
+                    border:  2px solid black;
+                    width: 80%;
+                    float: inherit;
+                    
+                }
+                .title-projeto {
+                    font-size: 200%;
+                    font-weight: bolder
+                }
+                .textos-projeto {
+                    text-align: left; 
+                    padding: 10px;
+                    text-align: justify;
+                    .descricao-projeto {
+                        font-size: 130%;
+                        font-weight: bold
+                    }
+                }
+                
+            }
+        }
+
+        .bottom {
+            min-height: 4vh;
+            background-color: #FFB2EF;
+            padding: 0px 20px;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px;
+            justify-content: space-around;
+            a {
+                text-decoration: none;
+                color: #9723c9;
+                
             }
             
         }
     </style>
 </head>
 <body>
-    <main>
-        <section class="textos">
-            <h1>Eleve seu negócio digital a outro nivel <span>Com um front-end de respeito!!</span></h1>
-            <p>
-                Olá! Sou o Ruan, um apaixonado por tecnologia e programação. Com uma sólida experiência no desenvolvimento de software, estou sempre em busca de soluções inovadoras. Minha dedicação vai além do código - busco criar experiências excepcionais para os usuários. Vamos transformar ideias em realidade juntos!
-            </p>
-            <div class="botoes">
-                <button onclick="window.location.href='https://github.com/runnanC-137/unicode'">Instagram</button>
-                <button onclick="window.location.href='https://github.com/runnanC-137/unicode'">GitHub</button>
+    <div id="navbar">
+        <div class="autor-nome">
+            Ruan Vieria
+        </div>
+        <div class="menu">
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+        
+    </div>
+    
+    <div class="autor">
+        <div class="autor-perfil"> 
+            <img class="autor-image" src="../pamonha/assets/pamonha.svg" alt="">
+            <h3 class="autor-title">Ruan Vieira</h3>
+            <p class="autor-skills">Software Devoper - Backend Programmer</p>
+            <a href="#contato" class="autor-contato">contato</a>
+        </div>
+    </div>
+    <div class="projetos" id="projetos">
+        <h1 class="projetos-title">Projetos</h1>
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
             </div>
-        </section>
-        <section class="foto">
-            <picture>
-                <img src="./assets/foto-perfil.jpg" >
-            </picture>
-        </section>
-        <nav class="navegador">
-            <button 
-            onclick="window.location.href='site-sofa'">
-                Go to Sofa 360
-            </button>
-        </nav>
-    </main>
+        </div>
+
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+        <div class="projeto">
+            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bottom">
+        <p>©2024 Ruan Vieira. Todos os direitos reservados.</p>
+        <p><a href="mailto:ruanlons@gmail.com">ruanlons@gmail.com</a></p>
+        <p>(94) 98409-1630</p>
+    </footer>
 </body>
 </html>
