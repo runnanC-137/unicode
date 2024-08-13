@@ -1,0 +1,33 @@
+.card-listing {
+	padding: .5rem;
+	display: grid;
+	grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+	gap: 1rem;
+}
+
+.card {
+	background-color: #fcfae1;
+	font-family: Verdana, Helvetica, sans-serif;
+	padding: 1rem;
+}
+.alecrim-dorado {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.linha-um {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.linha-dois {
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.card h3 {
+	color: #ba0722;
+	margin: 0;
+}
+
+.card p {
+	margin: 0;
+}

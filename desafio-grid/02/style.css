@@ -1,0 +1,27 @@
+.services-listing {
+	font-style: italic;
+	display: grid;
+	justify-items: end;
+	grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.coluna-1 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+.coluna-2 {
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+.service {
+	background-color: #e3fae9;
+	padding: .5rem;
+}
+.linha-dois {
+	grid-row-start: 5;
+}
+.linha-tres {
+	grid-row-start: 9;
+}
+.service p {
+	margin: 0;
+}
