@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: url('../imgs/back.png');
+    background-color: #242424;
+    padding-top: 100px;
+}
+
+.container .title {
+    width: 20%;
+    padding-right: 60px;
+}
+.container .title h1 {
+    font-family: "Hepta Slab";
+    font-weight: 400;
+    color: white;
+    font-size: 48px;   
+}
+.container .title img {
+    padding-top: 20px;
+}
+.images {
+    display: grid;
+    grid-template: auto / auto;
+    gap: 20px;
+    justify-items: center;
+    position: relative;
+
+}
+
+.image-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.image-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.image-4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.image-6 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.image-8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
