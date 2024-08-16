@@ -22,7 +22,7 @@ div.plano-card {
     display: grid;
     justify-items: left;
     align-items: center;
-    grid-template: 10% 12% 30% 1px auto / 50% 50%;
+    grid-template: 10% 12% 30% 1px 45% / 50% 50%;
     grid-template-areas: 
     'h3 .'
     'h1 h2'
@@ -30,6 +30,7 @@ div.plano-card {
     'linha linha'
     'lista lista';
     padding: 48px 32px 32px 32px;
+    background-color: white;
     border: solid 1px #E2E8F0;
 }
 .plano-card.destaque {
@@ -90,6 +91,7 @@ div.plano-card {
 }
 .plano-card button {
     grid-area: butao;
+    background-color: #ffff;
     height: 56px;
     font-size: 16px;
     font-weight: 700;
@@ -103,19 +105,62 @@ div.plano-card {
     align-self: start;
     grid-area: lista;
     width: 90%;
-    margin: 10% 0 0 8%;
-    list-style: url(imgs/check.png)
+    margin: 8% 0 0 8%;
+    list-style: none
 }
 .plano-card li {
-    margin-bottom: 15px;
+    padding: 7px 0;
     color: #475569;
 }
 .plano-card.destaque li {
-    margin-bottom: 15px;
     color: #CBD5E1;
 }
-
+li::before {
+    content: url(imgs/check.png);
+    position: absolute;
+    left: -9%;
+    top: 55%;
+    transform: translateY(-50%);
+}
 .plano-card li img {
     float: right;
     margin: 1px 0;
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        padding: 30px 0;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    div.plano-card {
+        grid-template-rows: 10% 12% 35% 5%;
+        width: 320px;
+        max-width: 90%;
+        min-height: 280px;
+        padding: 24px;
+    }
+    .plano-card h1 {
+        font-size: 24px;
+        font-weight: 700
+    }
+    .plano-card h2 {
+        font-size: 18px;
+        font-weight: 600
+    }
+    
+    .plano-card h2 .preco {
+        font-size: 20px;
+        font-weight: 700
+    }
+    .plano-card ul {
+        margin: 0 0 0 8%;
+        align-self: end;
+    }
+    .plano-card li {
+        padding: 2px 0;
+        color: #475569;
+    }
 }
