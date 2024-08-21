@@ -109,7 +109,7 @@
             min-height: 46vh;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
             font-family: monospace;
             background-color: #F4D738;
@@ -130,6 +130,7 @@
                 border:  3px solid black; 
                 position: relative;
                 width: 500px;
+                height: 140px;
                 .image-projeto {
                     border:  2px solid black; 
                     width: 35%;
@@ -138,7 +139,15 @@
                 }
                 .title-projeto {
                     font-size: 200%;
-                    font-weight: bolder
+                    font-weight: bolder;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        color: #9723c9;
+                    }
                 }
                 .textos-projeto {
                     text-align: left; 
@@ -165,8 +174,9 @@
                 padding: 10px;
                 height: 100px;
                 border: solid 3px black;
-                width: 30%;
+                width: 35%;
                 ul {
+                    margin-top: 5px;
                     width: 100%;
                     font-family: monospace;
                     display: flex;
@@ -179,9 +189,9 @@
                         padding: 5px 5px;
                         font-size: 18px;
                         list-style: none;
-                        width: 90px;
+                        width: 100px;
                         text-align: center;
-                        margin: 0px 5px 0px 0px;
+                        margin: 0px 10px 0px 0px;
                         cursor: pointer;
 
                     }
@@ -209,6 +219,21 @@
                     color: #9723c9;
                     
                 }
+            }
+        }
+
+        @media screen and (max-width: 880px){
+            .os-autores, #contato {
+                flex-direction: column;
+            }
+            .os-autores {
+                min-height: 70vh;
+                .autor-perfil {
+                    width: 250px;
+                }
+            }
+            .bottom .direitos {
+                font-size: 50%;
             }
         }
     </style>
@@ -244,25 +269,36 @@
     <div class="projetos" id="projetos">
         <h1 class="projetos-title">Projetos</h1>
         <div class="projeto">
-            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+            <img class="image-projeto" src="./assets/pamonha.svg" alt="">
             <div class="textos-projeto">
-                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <h2 class="title-projeto">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Receita de Pamonha
+                    </a>
+                </h2>
                 <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
             </div>
         </div>
 
-        <div class="projeto">
-            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+        <div class="projeto" >
+            <img class="image-projeto" src="./assets/sofa.png" alt="">
             <div class="textos-projeto">
-                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <h2 class="title-projeto">Site sofa</h2>
                 <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
             </div>
         </div>
 
-        <div class="projeto">
-            <img class="image-projeto" src="../pamonha/assets/pamonha.svg" alt="">
+        <div class="projeto" >
+            <img class="image-projeto" src="./assets/login.jpg" alt="">
             <div class="textos-projeto">
-                <h2 class="title-projeto">Receita de Pamonha</h2>
+                <h2 class="title-projeto">Pagina de Login</h2>
+                <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
+            </div>
+        </div>
+        <div class="projeto" >
+            <img class="image-projeto" src="./assets/404.gif" alt="">
+            <div class="textos-projeto">
+                <h2 class="title-projeto">Pagina de eror 404</h2>
                 <p class="descricao-projeto">Página feita a partir da reprodução de um protótipo no figma.</p>
             </div>
         </div>
@@ -289,7 +325,7 @@
     </div>
     <footer class="bottom">
         <div class="direitos">
-            <p>© 2024 Ruan Vieira. Todos os direitos reservados.</p>
+            <p>© 2024 Ruan Vieira.</p>
             <p>Contato: <a href="mailto:ruanlons@gmail.com">ruanlons@gmail.com</a></p>
             <p>Telefone: (94) 98409-1630</p>
         </div>
