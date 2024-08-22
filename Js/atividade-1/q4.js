@@ -1,0 +1,8 @@
+prompt = require("prompt-sync")()
+const { calculaBaskara } = require("./main")
+const a = parseInt(prompt("Digite o valor de a: "))
+const b = parseInt(prompt("Digite o valor de b: "))
+const c = parseInt(prompt("Digite o valor de c: "))
+const {x1, x2} = calculaBaskara(a, b, c)
+console.log(`x-1 um e igual a ${x1}`)
+console.log(`x-2 dois e igual a ${x2}`)
