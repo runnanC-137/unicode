@@ -49,7 +49,7 @@ function quatro() {
         if (ePrimo(i)) primos.push(i)
     }
     
-    
+    console.log(primos)
 }
 
 function cinco() {
