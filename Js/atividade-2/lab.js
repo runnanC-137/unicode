@@ -36,24 +36,33 @@ function tres() {
     console.log(`a potencia do numero ${numero} elevado a ${potencia} e igual a ${valor}`)
 }
 
-function quatro() {
-    const numero = parseInt(prompt("Digite um numero: "))
-    let ePrimo = false
+function ePrimo(num) {
     for (let divisor = 2; divisor < num; divisor++) 
-        if (num % divisor == 0) ePrimo = false;
-        ePrimo = true;
+        if (num % divisor == 0) return false;
+        return true;
+}
+
+function quatro() {
+    const primos = []
+    const numero = parseInt(prompt("Digite um numero: "))
+    for(let i=1; i<numero; i++){
+        if (ePrimo(i)) primos.push(i)
+    }
+    
     
 }
 
 function cinco() {
     const numeros = []
+    valor = 0
     while  (true) {
         const numero = parseInt(prompt("Digite um numero: "))
         if (!numero) break
+        valor =+ numero
         numeros.push(numero)
 
     }
-    media = numeros.reduce((acumulador, valor) => acumulador+valor, 0) / numeros.length
+    media = valor / numeros.length
     console.log(`a media do array ${numeros} é igual a ${media}`)
 }
 
