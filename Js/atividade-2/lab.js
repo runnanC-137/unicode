@@ -17,11 +17,11 @@ function um(){
 function dois() {
     const pares = []
     const impares = []
-    let o = 51
+    let o = 49 
     for(let i = 2; i<=50; i+=2) {
         pares.push(i)
-        impares.push(o)
-        o+=2
+        impares.push(o+=2)
+        
     }
     console.log(pares, impares)
 }
@@ -36,20 +36,26 @@ function tres() {
     console.log(`a potencia do numero ${numero} elevado a ${potencia} e igual a ${valor}`)
 }
 
-function ePrimo(num) {
-    for (let divisor = 2; divisor < num; divisor++) 
-        if (num % divisor == 0) return false;
-        return true;
-}
 
-function quatro() {
-    const primos = []
-    const numero = parseInt(prompt("Digite um numero: "))
-    for(let i=1; i<numero; i++){
-        if (ePrimo(i)) primos.push(i)
+
+function quatro(repeat) {
+
+    function ePrimo(num) {
+        if (num<2) return false
+        for (let divisor = 2; divisor < num; divisor++) 
+            if (num % divisor == 0) return false;
+        return true;
     }
     
-    console.log(primos)
+    for (let index = 0; index < repeat; index++) {
+        const primos = []
+        const numero = parseInt(prompt("Digite um numero: "))
+        for(let i=1; i<numero; i++){
+            if (ePrimo(i)) primos.push(i)
+        }
+        console.log(primos)
+    }
+    
 }
 
 function cinco() {
@@ -66,4 +72,4 @@ function cinco() {
     console.log(`a media do array ${numeros} é igual a ${media}`)
 }
 
-cinco()
+quatro(2)
