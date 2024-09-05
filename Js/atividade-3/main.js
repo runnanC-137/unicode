@@ -27,18 +27,26 @@ function tres() {
     console.log(!pares ? "Todos os elementos são pares" : "O vetor não possui somentes numeros pares")
 }
 
-function ePrimo(num) {
-    if (num<2) return false
-    for (let divisor = 2; divisor < num; divisor++) 
-        if (num % divisor == 0) return false;
-    return true;
-}
-function callback(vetor) {
-    return vetor.filter(ePrimo)
-}
-vetorDeVetores = [[1, 2, 4, 5, 7,3, 29], [11, 13, 56, 114, 34], [45, 78, 17, 19, 35, 87]]
-const vetMod = vetorDeVetores.map(callback)
-console.log(vetMod)
 
-dois()
+function quatro() {
+    function ePrimo(num) {
+        if (num<2) return false
+        for (let divisor = 2; divisor < num; divisor++) 
+            if (num % divisor == 0) return false;
+        return true;
+    }
+    function callback(vetor) {
+        return vetor.filter(ePrimo)
+    }
+    vetorDeVetores = [
+        [1, 2, 4, 5, 7,3, 29], 
+        [11, 13, 56, 114, 34], 
+        [45, 78, 17, 19, 35, 87]
+    ]
+    const vetMod = vetorDeVetores.map(callback)
+    console.log(vetMod)
+}
 
+function cinco() {
+    
+}
